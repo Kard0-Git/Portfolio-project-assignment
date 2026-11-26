@@ -166,8 +166,7 @@ body{
     display:flex;
     flex-direction: column;
     justify-self: center;
-    gap: 1rem;
-    max-width: 80%;
+    max-width: 100%;
     color: rgb(0,0,0);
     
 }
@@ -178,7 +177,7 @@ body{
     color: white;
     border-radius: 3px;
     transition: box-shadow .3s ease-in-out;
-    margin-top: 4rem;
+    margin-top: 6rem;
     margin: 5rem;
 
 }
@@ -192,9 +191,12 @@ body{
 .contact_icons{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+   
 
-    justify-content: space-evenly;
-
+}
+.contact_icons img{
+    margin-right: 5.5rem;
 }
 
 .contact_card div:hover{
