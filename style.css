@@ -21,7 +21,7 @@ body{
     justify-content: center;
     z-index: 100; 
     width: 100%;
-    margin-bottom: 2rem;
+    margin: 0px;
 }
 
 .nav-bar a{
@@ -114,13 +114,18 @@ body{
   justify-content: space-around;
   gap: 3rem;
   color: white;
+  
 }
 
 .project_card div{
     background-color: rgba(73, 73, 153, 0.425);
     padding: 1.2rem;
     transition: box-shadow .3s ease-in-out;
+    align-self: start;
+    
 }
+
+
 
 .project_card img{
     width: 100%;
@@ -158,11 +163,13 @@ body{
 }
 
 .contact_card{
-    display:grid;
-    grid-template-columns: auto;
-    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
     gap: 1rem;
+    width: 80%;
     color: rgb(0,0,0);
+    
 }
 
 .contact_card div{
@@ -172,18 +179,22 @@ body{
     border-radius: 3px;
     transition: box-shadow .3s ease-in-out;
     margin-top: 4rem;
+    margin: 10rem;
 
 }
+
 
 .contact_card li{
     list-style-type: none;
 
 }
 
-.contact_card li a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.contact_icons{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+
 }
 
 .contact_card div:hover{
@@ -191,70 +202,6 @@ body{
 
 }
 
-
-#firstname{
-    color: #ffffff;
-    font-weight: bold;
-}
-
-#first-last{
-    border-radius: 5px;
-    background-color: rgba(183, 183, 241, 0.13);
-    height: 30px;
-    border-color:rgba(183, 183, 241, 0.13)
-}
-
-#last-name{
-    border-radius: 5px;
-    background-color: rgba(183, 183, 241, 0.068);
-    height: 30px;
-    border-color:rgba(183, 183, 241, 0.13)
-}
-
-#email-address{
-    border-radius: 5px;
-    background-color: rgba(183, 183, 241, 0.068);
-    height: 30px;
-    border-color:rgba(183, 183, 241, 0.13)
-}
-
-#area{
-    border-radius: 5px;
-    background-color: rgba(235, 235, 238, 0.596);
-    border-color:rgba(183, 183, 241, 0.13)
-}
-#lastname{
-    color:#ffffff;
-    font-weight: bold;
-}
-
-#email{
-    color: #ffffff;
-    font-weight: bold;
-}
-
-#message-box{
-    color: #ffffff;
-    font-weight: bold;
-}
-
-#submit{
-    padding: 1rem;
-    background-color: rgba(138, 138, 184, 0.5);
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    border-radius: 20px;
-    border: none;
-    transition: box-shadow .3s ease-in-out
-}
-
-#submit:hover{
-    box-shadow: 5px 5px 6px rgba(0,0,0,.2);
-}
-
-#submit:active{
-    color:rgb(158, 187, 224);
-}
 
 #socials a {
     color: white;
@@ -270,25 +217,38 @@ body{
     margin-top: 5rem;
     margin-bottom: 4rem;
 }
-footer a{
-    display: grid;
-    grid-template-columns: auto;
-    color: rgb(0, 0, 0);
+
+
+footer{
+    margin-top: 200px;
+    width: 100%;
+    background-color: rgba(36, 36, 75, 0.425);
+    padding: 40px;
+}
+
+footer a {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin-bottom: 30px;
     font-weight: bold;
     margin-left: 42%;
 }
 
-footer{
-    margin-top: 200px;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    padding: 40px;
+
+
+.footer_text_mod a {
+    color:black;
 }
+.footer_text_mod p{
+    color: black;
+}
+
 
 .trademark{
     margin-left: 0.5%;
+    
 }
 
 .Ham_menu{
@@ -321,11 +281,17 @@ footer{
     }
 
     p{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     ul li{
-        font-size: 20px;
+        font-size: 18px;
+    }
+    footer a{
+        font-size: 18px;
+    }
+    .trademark{
+        font-size: 16px;
     }
 
 
@@ -357,11 +323,17 @@ footer{
     }
 
     p{
-        font-size: 20px;
+        font-size: 23px;
     }
 
     ul li{
-        font-size: 20px;
+        font-size: 23px;
+    }
+    footer a{
+        font-size: 23px;
+    }
+    .trademark{
+        font-size: 16px;
     }
 
 
@@ -375,6 +347,9 @@ footer{
     ul li{
         font-size: 30px;
     }
+    .trademark{
+        font-size: 16px;
+    }
 
 }
 
@@ -386,7 +361,7 @@ footer{
     color: black;
 }
 
-.contact_toggle input[type=text]{
+.contact_toggle h1{
     color: black;
 
 }

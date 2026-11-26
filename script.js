@@ -18,8 +18,11 @@ function lmtoggle(){
    var project_title = document.getElementById("changeTitleCol");
    project_title.classList.toggle("text")
 
-   var contact_page = document.getElementById("contact_part");
+   var contact_page = document.getElementById("contact_info");
    contact_page.classList.toggle("contact_toggle");
+
+   var footer_text = document.getElementById("footer_section");
+   footer_text.classList.toggle("footer_text_mod")
 
    
 }
