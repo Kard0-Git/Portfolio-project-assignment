@@ -179,7 +179,7 @@ body{
     border-radius: 3px;
     transition: box-shadow .3s ease-in-out;
     margin-top: 4rem;
-    margin: 10rem;
+    margin: 5rem;
 
 }
 
@@ -256,7 +256,7 @@ footer a {
    
 }
 
-@media only screen and (min-width: 300px){
+@media only screen and (min-width: 280px){
     .project_card{
       grid-template-columns: auto;
     }
@@ -300,7 +300,7 @@ footer a {
 
 }
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 800px){
     .project_card{
         grid-template-columns: auto auto;
     }
